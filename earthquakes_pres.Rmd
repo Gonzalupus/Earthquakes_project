@@ -38,13 +38,13 @@ xaringanExtra::use_panelset()
 
 ### Seismologists and social scientists in conversation
 
- Badziai Vitali
+ <p style="font-size:20px">Badziai Vitali</p>
  
- Mallak Khouloud
+ <p style="font-size:20px">Mallak Khouloud</p>
  
- Martínez-Herrera Gonzalo
+ <p style="font-size:20px">Martínez-Herrera Gonzalo</p>
 
-<img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/93/The_Graduate_Center%2C_CUNY_Logo.svg/1200px-The_Graduate_Center%2C_CUNY_Logo.svg.png" width=10% style="float:right; margin: -300px 24px 0px 0px" />
+<img src="gc_logo.png" width=35% style="float:right; margin: -310px -20px 0px 0px"/>
 
 ---
 layout: true
