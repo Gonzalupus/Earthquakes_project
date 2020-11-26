@@ -38,11 +38,11 @@ xaringanExtra::use_panelset()
 
 ### Seismologists and social scientists in conversation
 
- <p style="font-size:20px">Badziai Vitali</p>
+ <p style="font-size:15px">Badziai Vitali</p>
  
- <p style="font-size:20px">Mallak Khouloud</p>
+ <p style="font-size:15px">Mallak Khouloud</p>
  
- <p style="font-size:20px">Martínez-Herrera Gonzalo</p>
+ <p style="font-size:15px">Martínez-Herrera Gonzalo</p>
 
 <img src="gc_logo.png" width=35% style="float:right; margin: -310px -20px 0px 0px"/>
 
@@ -252,25 +252,49 @@ background-size: cover
 .center[Spaniards artificially dried the lake changing the physical properties of the soil.]
 
 <p style="color:white">.footnote[José María Velasco, *Vistas del Valle de México*]</p>
+
+---
+
+# Making sense of destruction
+
 ---
 layout: true
 background-image: url("concrete-crack-repair.jpg") 
 background-position: -25%
 ---
-# Making sense of destruction
+
+.panelset[
+
+.panel[.panel-name[1985]
 
 * High population and soil features of Mexico City <sup>1</sup>. 
 
-* In 1985 the soft soil experienced more acceleration than rock outcrop <sup>2</sup>. 
+* Soft soil experienced more acceleration than rock outcrop <sup>2</sup>. 
+
+* 8 % soft-story
 
 <img src="geozones.png" width=40% style="margin: 30px 24px 0px 0px"/>
 
 <img src="col_map.png" width=45% style="float:right; margin: -300px 24px 0px 0px"/>
 
-.footnote[<p style="font-size:15px">[1] Mayoral <i>et al</i>, 2019.</p>
-
+.footnote[<p style="font-size:15px">[1] Mayoral <i>et al.</i>, 2019.</p>
 <p style="font-size:15px">[2] Franke <i>et al</i>, 2019.</p>]
----
+
+]
+
+.panel[.panel-name[2017]
+
+* Location on soft soils or transition zones (zones II and III).
+
+* Location of building on the streets.
+
+* More than 50 % of collapsed buildings ha d soft-stories <sup>1</sup>.
+
+* Parking lots beneath the ground and masonry to support the walls.
+
+* Between 4 to 8 floors.
+]
+]
 
 ---
 ### The social in the natural
@@ -282,52 +306,101 @@ background-position: -25%
 + Mitigation through knowledge and .RUred[politics].
 
 ---
-Features of collapsed buildings
+### Features of collapsed buildings
 
+.panelset[
 
-```{r collapsed buildings, echo=FALSE, include = TRUE, fig.align='center'}
+.panel[.panel-name[Collapsed buildings]
+
+```{r collapsed buildings, echo=FALSE, include = TRUE, fig.align='center', fig.height=5}
 
 col_build <- readxl::read_excel(path = here("3. Proyecto/2. Data/col_build.xlsx"),
                               sheet = 1, trim_ws = T)
                               
 col_build <- rename(col_build, Age = age)
 
-col_partial <- filter(col_build, collapse == "Partial")
-
-col_total <- filter(col_build, collapse == "Total")
-
 pal <- MaizePal::maize_pal(name = "OaxacaGreen", n = 5, type = "discrete")
 
 pal2 <- MaizePal::maize_pal(name = "MaizMorado", n= 5, type = "discrete")
 
 col_build %>% 
-  group_by(use) %>% 
-  tally(sort = T) -> col_g 
+  group_by(use,collapse, Age, add = T) %>% 
+  tally(sort = T) %>% 
+  mutate(n_por = (n * 100)/ 44) -> g_col
 
-g_par<- ggplot(col_partial, aes(x = use)) +
-  geom_bar(aes(fill = Age)) +
+
+g_par <- g_col %>% 
+  filter(collapse == "Partial") %>% 
+  ggplot(aes(x = reorder(use, + n_por), y = n_por)) +
+  geom_col(aes(fill = Age)) +
   xlab('Use') +
-  ylab('Number of buildings') +
-  ylim(0, 15) +
+  ylab('Percentage of buildings') +
+  ylim(0, 100) +
+  ggtitle(label = 'Partial') +
   scale_fill_manual(values = alpha(colour = pal, alpha =  0.75))
 
 
-g_tot <- ggplot(col_total, aes(x = use)) +
-  geom_bar(aes(fill = Age)) +
+g_tot <- g_col %>% 
+  filter(collapse == "Total") %>% 
+  ggplot(aes(x = reorder(use, + n_por), y = n_por)) +
+  geom_col(aes(fill = Age)) +
   xlab('Use') +
-  ylab('Number of buildings') +
-  ylim(0, 15) +
+  ylab('Percentage of buildings') +
+  ylim(0, 100) +
+  ggtitle(label = 'Total') +
   scale_fill_manual(values = alpha(colour = pal2, alpha =  0.75))
 
-g_col <-  g_par / g_tot +
+g_col <-  g_par / plot_spacer() / g_tot +
   plot_annotation(tag_levels = 'A', tag_suffix = ')') 
 
 g_col & theme_minimal() 
   
 ```
 
+<!-- <p style="font-size:15px">.footnote[Galvis *et al.* 2020.]</p> -->
 
-.footnote[<p style="font-size:15px">Galvis *et al.* 2020.</p>].
+]
+
+.panel[.panel-name[Damaged buildings]
+
+<!-- * Total 284 buildings. -->
+
+```{r damaged buildings, fig.align='center', fig.height=5}
+
+dam_stor <- tribble(~n_sto,~n_por, ~orden,
+                   '1 - 2', 23.6, 1,
+                   '3 - 4', 14.8, 2,
+                   '5 - 6' , 32.7, 3,
+                   '7 - 8', 18.7, 4,
+                   '9 - 10', 7.7, 5,
+                   '11 - 12', 1.1, 6,
+                   '12 -13', 1.4, 7) %>% 
+  ggplot(aes(x = reorder(n_sto, + n_por), y = n_por)) +
+  geom_col(fill = alpha(pal[4], alpha = 0.75)) +
+  xlab('Number of stories') +
+  ylab('Percentage of buildings') +
+  ggtitle(label = 'Number of stories') 
+
+
+dam_use <-tibble(use = c('Residential', 'Residential & Business', 'Business', 'Educational', 'Industrial', 'Other'),
+                  n_por = c(66.2,15.69,12.2,1.05,1.05,3.81)) %>% 
+  ggplot(aes(x = reorder(use, + n_por), y = n_por)) +
+  geom_col(fill = alpha(pal2[2], alpha = 0.75)) +
+  xlab('Use and occupancy') +
+  ylab('Percentage of buildings') +
+  ggtitle(label = 'Use type') 
+
+g_dam <- dam_stor / plot_spacer() / dam_use +
+  plot_annotation(tag_levels = 'A', tag_suffix = ')') 
+
+g_dam & theme_minimal() 
+  
+```
+
+<!-- <p style="font-size:15px">.footnote[[1] Jara *et al.* 2019.]</p> -->
+]
+
+]
 ---
 <br>
 
@@ -407,7 +480,7 @@ name:Consequences
 
 .footnote[<p style="font-size:15px">[1] Lewontin y Levins. 2007. *Are we programmed?* </p>
 
-<p style="font-size:15px">[2] Ingold. 2011. *Being Alive: Essays on movement, knowledge, and description*]</p>
+<p style="font-size:15px">[2] Ingold. 2011. *When ANT meets SPIDER: Social theory for arthropods*]</p>
 ]
 
 .pull-right[<img src="ingold_net.png" width="200%")/> 
