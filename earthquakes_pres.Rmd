@@ -82,22 +82,22 @@ class: top, center
 # .grey[The nature of earthquakes]
 ---
 background-image: url('Conv-Div.jpg')
-background-size: cover
+background-size: contain
 ---
 background-image: url('Plates_Bord.jpg')
-background-size: cover
+background-size: contain
 ---
 background-image: url('Rates_motion.jpg')
-background-size: cover
+background-size: contain
 ---
 background-image: url('Ring.jpg')
-background-size: cover
+background-size: contain
 ---
 background-image: url('Slide1_Tect.jpg')
-background-size: cover
+background-size: contain
 ---
 background-image: url('Volc_Distr.jpg')
-background-size: cover
+background-size: contain
 ---
 layout: true
 background-image: url("concrete-crack-repair.jpg") 
@@ -123,7 +123,7 @@ background-position: -25%
 <img src="geo_stru.png"  style="float:right; margin: 50px 24px 0px 0px"/>
 ]
 
-.footnote[Benz *et al.* 2011.]
+.footnote[<p style="font-size:15px"> [1] Benz *et al.* 2011.]
 ---
 ### Seismic history
 
@@ -134,7 +134,7 @@ Mexico has a long history of destructive earthquakes and volcanic eruptions.
  <br>
  
 .pull-left[
-```{r earth history, echo=FALSE, include=TRUE}
+```{r earth history, echo=FALSE, include=TRUE, fig.height=4.5, fig.width=5}
 
 tibble(Earthquake = c(7.7,8,7.3,7,7,7.5),
        Year = c(1858,1931,1973,1980,1999,1999)) %>% 
@@ -147,7 +147,7 @@ tibble(Earthquake = c(7.7,8,7.3,7,7,7.5),
 ]
 
 .pull-right[
-<img src="mex_earth.png" width= 80% style="float:right; margin: 0px 0px 0px 100px"/>]
+<img src="mex_earth.png" width= 100% style="float:right; margin: 0px 0px 0px 100px"/>]
 
 ---
 ### September 1985:
@@ -155,19 +155,18 @@ tibble(Earthquake = c(7.7,8,7.3,7,7,7.5),
 <br>
 
 .pull-left[
-* 19:  M 8.1 earthquake killed more than 10,000 people in Mexico City<sup>1</sup>
+* 19:  M 8.1 earthquake killed more than 10,000 people in Mexico City<sup>1</sup>.
   
-* Subduction fault
+* Subduction fault.
 
-* 21: M 7.5 aftershock 
+* 21: M 7.5 aftershock .
   
-* Damages due to high plasticity of soil clays <sup>1</sup>]
+* Damages due to high plasticity of soil clays <sup>1</sup>.]
 
 .pull-right[
 <img src="https://academiadecomunicacion.files.wordpress.com/2012/09/002n1pol-1.jpg"/>]
 
-
-.footnote[<p style="font-size:15px">[1] Mayoral *et al*., 2019</p>]
+<p style="font-size:15px">.footnote[Mayoral *et al*., 2019] </p>
 ---
 
 ### 2017 Earthquakes 
@@ -176,11 +175,11 @@ tibble(Earthquake = c(7.7,8,7.3,7,7,7.5),
 
 .panel[.panel-name[September 7th]
 
-* M 8.2 in Chiapas region.
+* Magnitude 8.2 in Chiapas region.
 
 * Occurred within the Cocos plate.
 
-* strange since this mechanism does not produce large earthquakes.
+* Strange since this mechanism does not produce large earthquakes.
 
 * Largest earthquake in more than a century.
 
@@ -190,7 +189,7 @@ tibble(Earthquake = c(7.7,8,7.3,7,7,7.5),
 <br>
 <br>
 
-.footnote[[1] Sarlis *et al*., 2018]
+.footnote[<p style="font-size:15px">[1] Sarlis *et al*., 2018]
 
 ]
 
@@ -273,10 +272,11 @@ Spaniards artificially dried the lake changing the physical properties of the so
 
 "One of the great ironies of urban history that Mexico City, perhaps the largest city in the word, stand on one of the plant’s most unstable soils <sup>1</sup>.
 
+.left[
+.footnote[
+<p style="color:white; font-size:15px"> [1] Tobriner in Wisner <i>et. al</i>, 2004 </p>
 
-.white[.footnote[Tobriner in Wisner et. al, 2004
-
-<p style="color:white">José María Velasco, *Vistas del Valle de México*]</p>]
+<p style="color:white; font-size:15px"> José María Velasco, <i>Vistas del Valle de México</i> </p>]]
 
 ---
 layout: true
@@ -295,6 +295,9 @@ background-position: -25%
 
 * 8 % soft-story
 
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -349,7 +352,13 @@ background-position: -25%
 
 * Vulnerability from natural hazards is not synonymous to poverty, although both are evidently closely related. 
 
-.footnote[[1] Wisner *et.al*, 2004]
+
+<br>
+<br>
+<br>
+<br>
+
+.footnote[ <p style="font-size:15px"> [1] Wisner *et.al*, 2004]
 ---
 class: middle center
 
@@ -369,7 +378,7 @@ Micro-geographies and urban morphology: factored into seismic risk
 
 (Suggest Insert map of urban morphology of the city; present and pre-1085 if you can find one) 
 
-.footnote[[1] Montejano-Castillo and Moreno-Villanueva, date]
+<p style="font-size:15px">.footnote[[1] Montejano-Castillo and Moreno-Villanueva, date]</p>
 ---
 
 ### The temporal characteristics of the Earhtquake
@@ -378,7 +387,8 @@ Micro-geographies and urban morphology: factored into seismic risk
 
 * Gender norms and division of labor determine where people are during the occurrence of the earthquake and what activities they are engaged in.  
 
-(Alvarez-Diez, 2018) 
+
+<p style="font-size:15px">.footnote[Alvarez-Diez, 2018]</p>
 
 ---
 
@@ -401,8 +411,12 @@ Shape, siting, building material, construction details of buildings
 
 * The differential success of these construction projects meant that a number of them were not inhabited. The relation between the use of a building and its continued maintenance is also related to the ownership of the building (private or public) and the state regulation, their efficiency, implementation, and degree of enforceability.  
 
-* Bando Dos regulation failed to attract residents after a relatively short time of success due to high prices. Rents in the city could play a role in the degree to which structure are maintained. The regulation of property ownership and rental regulations as well as the culturally specific relationship to ‘house/home’ are inseparable form questions of maintenance and resilience of buildings. 
-Montejano-Castillo and Moreno-Villanueva
+* *Bando Dos* regulation failed to attract residents after a relatively short time of success due to high prices. Rents in the city could play a role in the degree to which structure are maintained. The regulation of property ownership and rental regulations as well as the culturally specific relationship to ‘house/home’ are inseparable form questions of maintenance and resilience of buildings. 
+
+<br>
+<br>
+
+.footnote[<p style="font-size:15px"> Montejano-Castillo and Moreno-Villanueva]
 
 ---
 
@@ -514,39 +528,48 @@ g_dam & theme_minimal()
 
 * Response to disasters are directly related to the science of risk, risk perception, and risk mitigation. 
 
-* Contemporary uses of the term risk pertain to precision, calculability, and control in modern era (Bernstein 1998; Douglas 1992; Joffe 1999; Douglas 1992).  
+* Contemporary uses of the term risk pertain to precision, calculability, and control in modern era <sup>1</sup>.  
 
 * The idea of controllability of risk and environment echoes underlying rationales of the modernization theory.
 
 * Considers the human as an actor on environment rather than within it. 
 
-* Overlooks the collective, context specific response to risks and disasters that are far more related to broader systems of meaning in a society than to individual/Psychological calculation (Joffe and O’Connor, 2013).
+* Overlooks the collective, context specific response to risks and disasters that are far more related to broader systems of meaning in a society than to individual/Psychological calculation <sup>2</sup>.
+
+
+.footnote[
+<p style="font-size:15px">[1] Bernstein, 1998; Douglas 1992; Joffe 1999 </p>
+<p style="font-size:15px">[2] Joffe and O’Connor, 2013
+]
+
 ---
 
 ### Resilience
 
 * Response to emergencies is necessarily related to multitude of psychological factors but also of social and cultural ones.  
 
-* Despite extensive critiques to the modern science of risk, risk mitigation measures and attempts to enhance ‘resilience’ of communities against disasters, these measures often overlook means of adaptation and resilience adopted by population living in disaster-prone locations (Wisner et. al, 2004)  
+* Despite extensive critiques to the modern science of risk, risk mitigation measures and attempts to enhance ‘resilience’ of communities against disasters, these measures often overlook means of adaptation and resilience adopted by population living in disaster-prone locations <sup>1</sup>.
 
+.footnote[
+<p style="font-size:15px">[1] Wisner et al., 2004 </p>]
 ---
-### References
+<!-- ### References -->
 
-<p style="font-size:15px">
-Benz, H.M., Dart, R.L., Villaseñor, Antonio, Hayes, G.P., Tarr, A.C., Furlong, K.P., and Rhea, Susan, 2011, Seismicity of the Earth 1900–2010 Mexico and vicinity: U.S. Geological Survey Open-File Report 2010–1083-F, scale 1:8,000,000. </p>
+<!-- <p style="font-size:15px"> -->
+<!-- Benz, H.M., Dart, R.L., Villaseñor, Antonio, Hayes, G.P., Tarr, A.C., Furlong, K.P., and Rhea, Susan, 2011, Seismicity of the Earth 1900–2010 Mexico and vicinity: U.S. Geological Survey Open-File Report 2010–1083-F, scale 1:8,000,000. </p> -->
 
-<p style="font-size:15px">
-Franke *et al*. 2019. Observed building damage patterns and foundation perfomance in Mexico CIty following the 2017 M7.1 Puebla-Mexico City earthquake. <i>Soild Dynamics and Earthquake Engineering. 125(105708)</i> </p>
+<!-- <p style="font-size:15px"> -->
+<!-- Franke *et al*. 2019. Observed building damage patterns and foundation perfomance in Mexico CIty following the 2017 M7.1 Puebla-Mexico City earthquake. <i>Soild Dynamics and Earthquake Engineering. 125(105708)</i> </p> -->
 
-<p style="font-size:15px">
-Mayoral *et al*, 2019. The september 19, 2017 M 7.1 Puebla-Mexico city earthquake: important findings from the field</p>
+<!-- <p style="font-size:15px"> -->
+<!-- Mayoral *et al*, 2019. The september 19, 2017 M 7.1 Puebla-Mexico city earthquake: important findings from the field</p> -->
 
-<p style="font-size:15px">
-Galvis *et al.* 2020. Overview of collapse buildings in Mexico City after September 2017 (M<sub>w</sub> 7.1) earthquake</p>
+<!-- <p style="font-size:15px"> -->
+<!-- Galvis *et al.* 2020. Overview of collapse buildings in Mexico City after September 2017 (M<sub>w</sub> 7.1) earthquake</p> -->
 
-<p style="font-size:15px">
-Sarlis N. *et al*. 2019. Natural time analysis: On the deadly Mexico M8.2 earthquake on 7 September 2017. <i>Physica A. (506)</i>:625-634. </p>
----
+<!-- <p style="font-size:15px"> -->
+<!-- Sarlis N. *et al*. 2019. Natural time analysis: On the deadly Mexico M8.2 earthquake on 7 September 2017. <i>Physica A. (506)</i>:625-634. </p> -->
+<!-- --- -->
 layout: false
 class: middle, center
 
