@@ -175,21 +175,23 @@ tibble(Earthquake = c(7.7,8,7.3,7,7,7.5),
 
 .panel[.panel-name[September 7th]
 
+.pull-left[
 * Magnitude 8.2 in Chiapas region.
 
 * Occurred within the Cocos plate.
 
 * Strange since this mechanism does not produce large earthquakes.
 
-* Largest earthquake in more than a century.
+* Largest earthquake in more than a century.]
 
-.center[
-<img src = "lithos.png" width = 50%/>]
+.pull-right[
+<img src = "lithos.png" width = 100%/>]
 
 <br>
+
 <br>
 
-.footnote[<p style="font-size:15px">[1] Sarlis *et al*., 2018]
+<p style="font-size:15px">.footnote[[1] Sarlis *et al*., 2018]
 
 ]
 
@@ -553,6 +555,9 @@ g_dam & theme_minimal()
 .footnote[
 <p style="font-size:15px">[1] Wisner et al., 2004 </p>]
 ---
+layout: false
+class: middle, center
+
 <!-- ### References -->
 
 <!-- <p style="font-size:15px"> -->
@@ -570,8 +575,6 @@ g_dam & theme_minimal()
 <!-- <p style="font-size:15px"> -->
 <!-- Sarlis N. *et al*. 2019. Natural time analysis: On the deadly Mexico M8.2 earthquake on 7 September 2017. <i>Physica A. (506)</i>:625-634. </p> -->
 <!-- --- -->
-layout: false
-class: middle, center
 
 # Graduate level discussion
 
