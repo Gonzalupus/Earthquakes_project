@@ -26,7 +26,7 @@ library(tidyverse)
 library(extrafont)
 library(here)
 library(patchwork)
-
+library(brickr)
 
 xaringanExtra::use_fit_screen()
 xaringanExtra::use_tile_view()
@@ -66,7 +66,7 @@ background-position: -25%
 
 * Graduate level discussion
 
-  + Reflexions from the analysis of earthquakes in Mexico City
+  + Reflections on the analysis of earthquakes in Mexico City
   
   + Complexity and framing of questions: How to integrate natural and social perspectives?
   
@@ -80,13 +80,29 @@ background-size: cover
 class: top, center
 
 # .grey[The nature of earthquakes]
-
+<!-- --- -->
+<!-- background-image: url('Conv-Div.jpg') -->
+<!-- background-size: cover -->
+<!-- --- -->
+<!-- background-image: url('Plates_Bord.jpg') -->
+<!-- background-size: cover -->
+<!-- --- -->
+<!-- background-image: url('Rates_motion.jpg') -->
+<!-- background-size: cover -->
+<!-- --- -->
+<!-- background-image: url('Ring.jpg') -->
+<!-- background-size: cover -->
+<!-- --- -->
+<!-- background-image: url('Slide1_Tect.jpg') -->
+<!-- background-size: cover -->
+<!-- --- -->
+<!-- background-image: url('Volc_Distr.jpg') -->
+<!-- background-size: cover -->
 ---
 layout: true
 background-image: url("concrete-crack-repair.jpg") 
 background-position: -25%
 ---
-
 ### Seismic profile
 
 <br>
@@ -241,27 +257,33 @@ background-image: url('http://historycollection.com/wp-content/uploads/2017/06/7
 background-size: cover
 class: center
 
+.white[*Legacies of colonialism*]
+
 .white[Mexico City was founded over the remnants of Tenochtitlan, the capital of the Mexica (Aztec) empire that located in an islet in the Texcoco lake.]
+
 
 ---
 name: history2
 layout:false
 background-image: url("https://uploads6.wikiart.org/images/jose-maria-velasco/vistas-del-valle-de-m-xico.jpg") 
 background-size: cover
+class: center
 
-.center[Spaniards artificially dried the lake changing the physical properties of the soil.]
+Spaniards artificially dried the lake changing the physical properties of the soil.
 
-<p style="color:white">.footnote[José María Velasco, *Vistas del Valle de México*]</p>
+"One of the great ironies of urban history that Mexico City, perhaps the largest city in the word, stand on one of the plant’s most unstable soils <sup>1</sup>.
 
----
 
-# Making sense of destruction
+.white[.footnote[Tobriner in Wisner et. al, 2004
+
+<p style="color:white">José María Velasco, *Vistas del Valle de México*]</p>]
 
 ---
 layout: true
 background-image: url("concrete-crack-repair.jpg") 
 background-position: -25%
 ---
+### Making sense of destruction
 
 .panelset[
 
@@ -273,12 +295,17 @@ background-position: -25%
 
 * 8 % soft-story
 
-<img src="geozones.png" width=40% style="margin: 30px 24px 0px 0px"/>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-<img src="col_map.png" width=45% style="float:right; margin: -300px 24px 0px 0px"/>
+.footnote[
+<p style="font-size:15px">[1] Mayoral <i>et al.</i>, 2019.</p>
 
-.footnote[<p style="font-size:15px">[1] Mayoral <i>et al.</i>, 2019.</p>
-<p style="font-size:15px">[2] Franke <i>et al</i>, 2019.</p>]
+<p style="font-size:15px">[2] Franke <i>et al</i>, 2019.</p>
+]
 
 ]
 
@@ -288,11 +315,15 @@ background-position: -25%
 
 * Location of building on the streets.
 
-* More than 50 % of collapsed buildings ha d soft-stories <sup>1</sup>.
+* More than 50 % of collapsed buildings had soft-stories <sup>1</sup>.
 
 * Parking lots beneath the ground and masonry to support the walls.
 
 * Between 4 to 8 floors.
+
+<img src="geozones.png" width=40% style="margin: 30px 24px 0px 0px"/>
+
+<img src="col_map.png" width=45% style="float:right; margin: -300px 24px 0px 0px"/>
 ]
 ]
 
@@ -301,11 +332,80 @@ background-position: -25%
 
 <br>
 
-+ Introduction to the concept of vulenerability, resilience, and frameworks.
++ Introduction to the concept of vulenerability, resilience, and risk.
 
-+ Mitigation through knowledge and .RUred[politics].
++ Mitigation measures through contextual analysis and politics.
 
 ---
+### Defining vulnerability
+
+<br>
+
+* "The characteristics of a person or group and their situation that influence their capacity to anticipate, cope with, resist and recover from the impact of natural hazard (an extreme natural event or process)” <sup>1</sup>. 
+
+* Vulnerability can be measured in terms of damage to future impact on people’s access to resources, their abilities to foster coping mechanisms to recover from the disruption a natural hazard has caused their livelihoods. 
+
+* Vulnerability includes, but is not limited to, the measurable quantifiable damage of property and life at the time of the disaster.  
+
+* Vulnerability from natural hazards is not synonymous to poverty, although both are evidently closely related. 
+
+.footnote[[1] Wisner *et.al*, 2004]
+---
+class: middle center
+
+# Determinants of Vulnerabilities for earthquakes
+---
+### The location of the earthquake
+
+Micro-geographies and urban morphology: factored into seismic risk 
+
+* The population density of areas impacted by 2017 earthquake is a question of political economy
+
+* The process of de-industrialization (following the world trade agreement in 1988) are key pillars for understanding the change in the urban morphology of Mexico City between 1985 and 2017 earthquakes and the increase in population of the city.
+ 
+* Bando Dos, an urban development policy was introduced in 2000, and it and aimed at re-densifying the city as a means to Mexico City’s ‘urban development’. 
+70% of the destroyed building are residential buildings <sup>1</sup>.
+
+
+(Suggest Insert map of urban morphology of the city; present and pre-1085 if you can find one) 
+
+.footnote[[1] Montejano-Castillo and Moreno-Villanueva, date]
+---
+
+### The temporal characteristics of the Earhtquake
+
+* The season, the time of the day, and year, and their resemblance to the context specific type of human activities taking place. 
+
+* Gender norms and division of labor determine where people are during the occurrence of the earthquake and what activities they are engaged in.  
+
+(Alvarez-Diez, 2018) 
+
+---
+
+### The Characteristics of the buildings
+
+Shape, siting, building material, construction details of buildings
+
+* After the 1985 earthquake, the Mexican state introduced several regulation on buildings structure and architecture. 
+
+* Post-disaster assessments indicate that the collapsed building were those recently constructed (9 months to 12 years) and some were not inhabited. 
+
+* Construction and architectural technologies designed to mitigate seismic vulnerabilities in buildings in the city remain inadequate without addressing issues related to general economic policies, urban development, and governance. 
+---
+
+### The Characteristics of the buildings
+
+<br>
+
+* Delays in the finalizations of the regulations of the re-densification policies in Mexico City resulted in ill-managed and spatially unregulated distribution of the construction of new buildings. 
+
+* The differential success of these construction projects meant that a number of them were not inhabited. The relation between the use of a building and its continued maintenance is also related to the ownership of the building (private or public) and the state regulation, their efficiency, implementation, and degree of enforceability.  
+
+* Bando Dos regulation failed to attract residents after a relatively short time of success due to high prices. Rents in the city could play a role in the degree to which structure are maintained. The regulation of property ownership and rental regulations as well as the culturally specific relationship to ‘house/home’ are inseparable form questions of maintenance and resilience of buildings. 
+Montejano-Castillo and Moreno-Villanueva
+
+---
+
 ### Features of collapsed buildings
 
 .panelset[
@@ -335,7 +435,7 @@ g_par <- g_col %>%
   geom_col(aes(fill = Age)) +
   xlab('Use') +
   ylab('Percentage of buildings') +
-  ylim(0, 100) +
+  ylim(0, 50) +
   ggtitle(label = 'Partial') +
   scale_fill_manual(values = alpha(colour = pal, alpha =  0.75))
 
@@ -346,7 +446,7 @@ g_tot <- g_col %>%
   geom_col(aes(fill = Age)) +
   xlab('Use') +
   ylab('Percentage of buildings') +
-  ylim(0, 100) +
+  ylim(0, 50) +
   ggtitle(label = 'Total') +
   scale_fill_manual(values = alpha(colour = pal2, alpha =  0.75))
 
@@ -377,6 +477,7 @@ dam_stor <- tribble(~n_sto,~n_por, ~orden,
                    '12 -13', 1.4, 7) %>% 
   ggplot(aes(x = reorder(n_sto, + n_por), y = n_por)) +
   geom_col(fill = alpha(pal[4], alpha = 0.75)) +
+  ylim(0, 50) +
   xlab('Number of stories') +
   ylab('Percentage of buildings') +
   ggtitle(label = 'Number of stories') 
@@ -386,6 +487,7 @@ dam_use <-tibble(use = c('Residential', 'Residential & Business', 'Business', 'E
                   n_por = c(66.2,15.69,12.2,1.05,1.05,3.81)) %>% 
   ggplot(aes(x = reorder(use, + n_por), y = n_por)) +
   geom_col(fill = alpha(pal2[2], alpha = 0.75)) +
+  ylim(0, 70) +
   xlab('Use and occupancy') +
   ylab('Percentage of buildings') +
   ggtitle(label = 'Use type') 
@@ -406,6 +508,26 @@ g_dam & theme_minimal()
 
 .center[
 <img src="https://corprensa-la-prensa-prod.cdn.arcpublishing.com/resizer/cubR7UgvGPyGe5aXy_Qyfg2BDos=/fit-in/1000x1000/smart/arc-anglerfish-arc2-prod-corprensa.s3.amazonaws.com/public/HQJQU6JZRNCLJG7GTBPMX33KDI.jpg" />]
+---
+
+### Risk
+
+* Response to disasters are directly related to the science of risk, risk perception, and risk mitigation. 
+
+* Contemporary uses of the term risk pertain to precision, calculability, and control in modern era (Bernstein 1998; Douglas 1992; Joffe 1999; Douglas 1992).  
+
+* The idea of controllability of risk and environment echoes underlying rationales of the modernization theory.
+
+* Considers the human as an actor on environment rather than within it. 
+
+* Overlooks the collective, context specific response to risks and disasters that are far more related to broader systems of meaning in a society than to individual/Psychological calculation (Joffe and O’Connor, 2013).
+---
+
+### Resilience
+
+* Response to emergencies is necessarily related to multitude of psychological factors but also of social and cultural ones.  
+
+* Despite extensive critiques to the modern science of risk, risk mitigation measures and attempts to enhance ‘resilience’ of communities against disasters, these measures often overlook means of adaptation and resilience adopted by population living in disaster-prone locations (Wisner et. al, 2004)  
 
 ---
 ### References
@@ -496,19 +618,19 @@ name:Consequences
 
 * Lo anterior se refleja en la idea de la interacción, la cual ocurre en elementos necesariamente separados.
 
-
 ---
 
 ### Environmental determinism
 
 <br>
 
-* *Nature* forces are the cause of disasters
+* Naturalist/physicalist approach: *Nature* forces are the cause of disasters
 
 * Interpretations of nature do not recognize the diversity of *interactions* with it.
 
-* Modernization theory: 
-  
+* Bounded rationality: 
+
+  + Based on foundations of Modernization theory 
   + Linear evolution of society and economy.
   + Technological solutions.
   
@@ -520,13 +642,13 @@ name:Consequences
 
 * Stems from political economy.
 
-* Oppposes to the modernization theory.
+* Opposes to the modernization theory.
 
 * Systems perspective as a mean to analyze disasters.
 
 Limitations:
 
-* Does not explain systems' vulnerabilities during disaster events.
+* Does not explain how systems and their subsequent widespread conditions (such as poverty and displacement for example) translated into particular forms of vulnerabilities at times of natural hazards occurrence. 
 
 * Emphasis on the political analysis a the cost of superficial ecological analysis.
 
