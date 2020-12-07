@@ -80,24 +80,24 @@ background-size: cover
 class: top, center
 
 # .grey[The nature of earthquakes]
-<!-- --- -->
-<!-- background-image: url('Conv-Div.jpg') -->
-<!-- background-size: cover -->
-<!-- --- -->
-<!-- background-image: url('Plates_Bord.jpg') -->
-<!-- background-size: cover -->
-<!-- --- -->
-<!-- background-image: url('Rates_motion.jpg') -->
-<!-- background-size: cover -->
-<!-- --- -->
-<!-- background-image: url('Ring.jpg') -->
-<!-- background-size: cover -->
-<!-- --- -->
-<!-- background-image: url('Slide1_Tect.jpg') -->
-<!-- background-size: cover -->
-<!-- --- -->
-<!-- background-image: url('Volc_Distr.jpg') -->
-<!-- background-size: cover -->
+---
+background-image: url('Conv-Div.jpg')
+background-size: cover
+---
+background-image: url('Plates_Bord.jpg')
+background-size: cover
+---
+background-image: url('Rates_motion.jpg')
+background-size: cover
+---
+background-image: url('Ring.jpg')
+background-size: cover
+---
+background-image: url('Slide1_Tect.jpg')
+background-size: cover
+---
+background-image: url('Volc_Distr.jpg')
+background-size: cover
 ---
 layout: true
 background-image: url("concrete-crack-repair.jpg") 
