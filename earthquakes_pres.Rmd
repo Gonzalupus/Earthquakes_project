@@ -81,27 +81,29 @@ class: top, center
 
 # .grey[The nature of earthquakes]
 ---
-background-image: url('Conv-Div.jpg')
-background-size: contain
----
 background-image: url('Plates_Bord.jpg')
 background-size: contain
+
+.center[### The Earth's major lithosphere plates]
+---
+background-image: url('Conv-Div.jpg')
+background-size: contain
+
+.center[
+### Cross section showing activity at confergent, divergent, and transform boundaries.]
+
 ---
 background-image: url('Rates_motion.jpg')
 background-size: contain
----
-background-image: url('Ring.jpg')
-background-size: contain
----
-background-image: url('Slide1_Tect.jpg')
-background-size: contain
+class: center
+
+### Convergence boundary and plate motion
 ---
 background-image: url('Volc_Distr.jpg')
 background-size: contain
----
-layout: true
-background-image: url("concrete-crack-repair.jpg") 
-background-position: -25%
+
+### Worldwide distribution of active subaerial volcanoes - Ring of Fire
+
 ---
 ### Seismic profile
 
@@ -124,6 +126,14 @@ background-position: -25%
 ]
 
 .footnote[<p style="font-size:15px"> [1] Benz *et al.* 2011.]
+
+---
+background-image: url('Slide1_Tect.jpg')
+background-size: contain
+---
+layout: true
+background-image: url("concrete-crack-repair.jpg") 
+background-position: -25%
 ---
 ### Seismic history
 
@@ -293,24 +303,14 @@ background-position: -25%
 
 * High population and soil features of Mexico City <sup>1</sup>. 
 
-* Soft soil experienced more acceleration than rock outcrop <sup>2</sup>. 
+* Soft soil experienced more acceleration than rock outcrop. 
 
 * 8 % soft-story
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<img src="geozones.png" width=30% style="margin: 0px 0px 0px 180px"/>
 
-.footnote[
-<p style="font-size:15px">[1] Mayoral <i>et al.</i>, 2019.</p>
 
-<p style="font-size:15px">[2] Franke <i>et al</i>, 2019.</p>
-]
+<p style="font-size:15px">.footnote[[1] Mayoral <i>et al.</i>, 2019.</p>]
 
 ]
 
@@ -324,11 +324,12 @@ background-position: -25%
 
 * Parking lots beneath the ground and masonry to support the walls.
 
-* Between 4 to 8 floors.
+<img src="col_map.png" width=45% style="float:right; margin: 0px 0px 0px 0px"/>
 
-<img src="geozones.png" width=40% style="margin: 30px 24px 0px 0px"/>
+<img src="soft_story.png" style="float:right; margin: 0px 0px 0px 0px"/>
 
-<img src="col_map.png" width=45% style="float:right; margin: -300px 24px 0px 0px"/>
+<p style="font-size:15px">,footnote[[1] Jara <i>et al</i>, 2019.</p>]
+
 ]
 ]
 
