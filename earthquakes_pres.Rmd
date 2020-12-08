@@ -378,9 +378,25 @@ Micro-geographies and urban morphology: factored into seismic risk
 70% of the destroyed building are residential buildings <sup>1</sup>.
 
 
-(Suggest Insert map of urban morphology of the city; present and pre-1085 if you can find one) 
+<p style="font-size:15px">.footnote[[1] Montejano-Castillo and Moreno-Villanueva]</p>
+---
 
-<p style="font-size:15px">.footnote[[1] Montejano-Castillo and Moreno-Villanueva, date]</p>
+<img src="https://www.gifex.com/images/0X0/2011-09-17-14572/Crecimiento_de_la_ciudad_de_Mexico.png">
+
+---
+class:center middle
+
+.pull-left[
+### 1985
+
+<img src="cdmx85.png" width=100% style="float:right; margin: 0px 0px 0px 0px"/>]
+
+
+.pull-right[
+### 2018
+
+<img src="cdmx2018.png" width=100% style="float:right; margin: 0px -20px 0px 0px"/>]
+
 ---
 
 ### The temporal characteristics of the Earhtquake
@@ -700,6 +716,9 @@ $Nature +  Society$
 
 .center[
 .bottom[<img src="nat-soc.jpg" width= "500"/>]]
+
+
+<p style="font-size:15px">.footnote[Moore, 2015]</p>
 
 ???
 * Pueden tener una premisa filosófica que parta de la indivisibilidad de la sociedad y la naturaleza, pero en la práctica esto no ha sido implementado.
