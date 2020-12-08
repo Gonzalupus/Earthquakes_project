@@ -301,7 +301,7 @@ background-position: -25%
 
 .panel[.panel-name[1985]
 
-* High population and soil features of Mexico City <sup>1</sup>. 
+* High population and soil features of Mexico City. 
 
 * Soft soil experienced more acceleration than rock outcrop. 
 
@@ -310,7 +310,7 @@ background-position: -25%
 <img src="geozones.png" width=30% style="margin: 0px 0px 0px 180px"/>
 
 
-<p style="font-size:15px">.footnote[[1] Mayoral <i>et al.</i>, 2019.</p>]
+<!-- <p style="font-size:15px">.footnote[[1] Mayoral <i>et al.</i>, 2019.</p>] -->
 
 ]
 
@@ -320,15 +320,15 @@ background-position: -25%
 
 * Location of building on the streets.
 
-* More than 50 % of collapsed buildings had soft-stories <sup>1</sup>.
+* More than 50 % of collapsed buildings had soft-stories.
 
 * Parking lots beneath the ground and masonry to support the walls.
 
-<img src="col_map.png" width=45% style="float:right; margin: 0px 0px 0px 0px"/>
+<img src="col_map.png" width=48% style="float:right; margin: 0px 0px 0px 0px"/>
 
 <img src="soft_story.png" style="float:right; margin: 0px 0px 0px 0px"/>
 
-<p style="font-size:15px">,footnote[[1] Jara <i>et al</i>, 2019.</p>]
+<!-- <p style="font-size:15px">.footnote[[1] Jara <i>et al</i>, 2019.</p>] -->
 
 ]
 ]
@@ -361,7 +361,7 @@ background-position: -25%
 <br>
 <br>
 
-.footnote[ <p style="font-size:15px"> [1] Wisner *et.al*, 2004]
+.footnote[<p style="font-size:15px"> [1] Wisner *et.al*, 2004]
 ---
 class: middle center
 
@@ -380,9 +380,6 @@ Micro-geographies and urban morphology: factored into seismic risk
 
 
 <p style="font-size:15px">.footnote[[1] Montejano-Castillo and Moreno-Villanueva]</p>
----
-
-<img src="https://www.gifex.com/images/0X0/2011-09-17-14572/Crecimiento_de_la_ciudad_de_Mexico.png">
 
 ---
 class:center middle
