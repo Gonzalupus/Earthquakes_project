@@ -128,9 +128,6 @@ background-size: contain
 .footnote[<p style="font-size:15px"> [1] Benz *et al.* 2011.]
 
 ---
-background-image: url('Slide1_Tect.jpg')
-background-size: contain
----
 layout: true
 background-image: url("concrete-crack-repair.jpg") 
 background-position: -25%
@@ -383,6 +380,8 @@ Micro-geographies and urban morphology: factored into seismic risk
 
 ---
 class:center middle
+
+Visualize Mexico City's development in [this site](https://earthengine.google.com/timelapse#v=19.43259,-99.1332,8.642,latLng&t=1.08&ps=25&bt=19840101&et=20181231&startDwell=0&endDwell=0) from google timelapse.
 
 .pull-left[
 ### 1985
